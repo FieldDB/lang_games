@@ -184,7 +184,7 @@ border-color: #B22400;
       color: #000;
     background-color: #FFAD33;
 }
-.navbar-inverse .navbar-nav .open .dropdown-menu > li { 
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a { 
       color: #000;
     background-color: #FFAD33;
 }
