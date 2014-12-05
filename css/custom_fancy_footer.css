@@ -202,3 +202,9 @@ color: #ffffff;
 .navbar-inverse .navbar-nav .open .dropdown-menu > li:focus {
 color: #B22400;
 }
+
+.navbar-inverse .dropdown-menu > li > a:hover, 
+.navbar-inverse .dropdown-menu > .active > a, 
+.navbar-inverse .dropdown-menu > .active > a:hover {
+background-color: #B22400;
+}
