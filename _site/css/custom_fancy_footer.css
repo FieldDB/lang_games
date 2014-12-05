@@ -12,7 +12,7 @@
  }
 
  .navbar-inverse {
-  color:#3A3838;
+  color:#B22400;
   background-size: contain;
   background-repeat:no-repeat;
   background-position: center;  
@@ -29,7 +29,7 @@ background-image:url('http://canders1.github.io/img/tree_border.png');
 }
 
 navbar-inverse .navbar-brand {
-color: #81F7BE;
+color: #B22400;
 }
 
 .navbar-inverse .navbar-nav > li > a {
@@ -51,7 +51,7 @@ background-color: #81F7BE;
  footer {
   height: 5%;
   font-size: small;
-  color:#3A3838;
+  color:#B22400;
   background-image:url('../img/tree_border.png');
   background-size: contain;
   background-repeat:repeat-x;
