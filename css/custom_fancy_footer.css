@@ -181,12 +181,11 @@ border-color: #B22400;
 
 .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
-      color: #000;
+      color: #FFFFFF;
     background-color: #FFAD33;
 }
 .navbar-inverse .navbar-nav .open .dropdown-menu > li > a { 
       color: #000;
-    background-color: #FFAD33;
 }
 }
 
