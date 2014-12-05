@@ -132,16 +132,16 @@ background-image: none;
     }    
 }
 
+a:focus {
+  color: #FFAD33;
+}
+
 .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
-background-color: #B22400;
+background-color: #FFAD33;
 }
 
 .navbar-inverse .navbar-collapse {
 border-color: #B22400;
-}
-
-a:focus {
-  color: #B22400;
 }
 
 .dropdown-menu > .active > a,
@@ -157,7 +157,6 @@ a:focus {
 }
 
 .navbar-inverse {
-  <!--background-color: #B22400;-->
   border-color: #B22400;
 } 
 
