@@ -181,6 +181,7 @@ border-color: #B22400;
 }
 .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
+      color: inherit;
     background-color: #FFAD33;
 }
 
