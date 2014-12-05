@@ -173,7 +173,7 @@ border-color: #B22400;
 }
 @media (max-width: 767px) {
   .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
-    border-color: #B22400;
+    <!--border-color: #B22400;-->
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu .divider {
     background-color: #B22400;
