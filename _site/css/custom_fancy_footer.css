@@ -136,7 +136,7 @@ background-image: none;
 background-color: #B22400;
 }
 
-.navbar-collapse, .navbar-inverse .navbar-form {
+.navbar-collapse {
 border-color: #B22400;
 }
 
