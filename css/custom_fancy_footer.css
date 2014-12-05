@@ -28,6 +28,10 @@ background-image:url('http://canders1.github.io/img/tree_border.png');
 }
 }
 
+.navbar-inverse {
+border-color: #FFAD33;
+}
+
 navbar-inverse .navbar-brand {
 color: #B22400;
 }
