@@ -55,7 +55,7 @@ background-color: #B22400;
  footer {
   height: 5%;
   font-size: small;
-  color:#B22400;
+  color: transparent;
   background-image: url("../img/small_bird.svg");
   background-size: contain;
   background-repeat:repeat-x;
