@@ -132,6 +132,7 @@ background-image: none;
     }    
 }
 
+a:hover,
 a:focus {
   color: #FFAD33;
 }
