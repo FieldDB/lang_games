@@ -198,6 +198,7 @@ background-color: #FFAD33;
 color: #ffffff;
 }
 
+.navbar-inverse .dropdown-menu > li:hover,
 .navbar-inverse .dropdown-menu > li:focus {
 color: #B22400;
 }
