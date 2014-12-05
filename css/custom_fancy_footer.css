@@ -189,4 +189,7 @@ border-color: #B22400;
 }
 }
 
+.navbar-inverse .dropdown-menu {
+background-color: #FFAD33;
+}
 
