@@ -193,3 +193,11 @@ border-color: #B22400;
 background-color: #FFAD33;
 }
 
+.navbar-inverse .dropdown-menu > li > a, 
+.navbar-inverse .dropdown-menu > li > a:focus {
+color: #ffffff;
+}
+
+.navbar-inverse .dropdown-menu > li:focus {
+color: #B22400;
+}
