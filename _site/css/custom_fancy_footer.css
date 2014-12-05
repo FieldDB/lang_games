@@ -184,6 +184,10 @@ border-color: #B22400;
       color: inherit;
     background-color: #FFAD33;
 }
+.navbar-inverse .navbar-nav .open .dropdown-menu > li { 
+      color: #000;
+    background-color: #FFAD33;
+}
 
 
 
