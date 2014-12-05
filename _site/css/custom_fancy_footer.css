@@ -141,7 +141,7 @@ background-color: #FFAD33;
 }
 
 .navbar-inverse .navbar-collapse {
-border-color: #FFAD33;
+border-color: #B22400;
 }
 
 .dropdown-menu > .active > a,
@@ -153,7 +153,7 @@ border-color: #FFAD33;
 .nav .open > a,
 .nav .open > a:hover,
 .nav .open > a:focus {
-  border-color: #FFAD33;
+  border-color: #B22400;
 }
 
 .navbar-inverse .navbar-brand:hover,
@@ -163,13 +163,13 @@ border-color: #FFAD33;
 
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
-  background-color: #FFAD33;
+  background-color: #B22400;
 }
 
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
-  background-color: #FFAD33;
+  background-color: #B22400;
 }
 
 .navbar-inverse .navbar-collapse,
