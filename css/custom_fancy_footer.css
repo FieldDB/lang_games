@@ -157,7 +157,7 @@ border-color: #B22400;
 }
 
 .navbar-inverse {
-  border-color: #B22400;
+  <!--border-color: #B22400;-->
 } 
 
 .navbar-inverse .navbar-brand:hover,
