@@ -1,4 +1,5 @@
 function changeColor(item) {
+    console.log("item");
   item.style = "color: red";    
 }
 
