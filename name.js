@@ -5,5 +5,7 @@ function changeColor(item) {
 
 var el = document.getElementsByTagName("h4");
 for (var i = 0; i < el.length; i++){
+    console.log(el);
+    console.log(el[i]);
     el[i].addEventListener("click", function(){changeColor(el[i])}, false);
 }
