@@ -1,10 +1,9 @@
 function changeColor(item, color) {
     var tag = item.className;
     var el = document.getElementsByClassName(tag);
-    var i;
     console.log(el);
     if (item.style.color === color) {
-        for (i = 0; i < el.length; i++){
+        for (var i = 0; i < el.length; i++){
             console.log(el[i]);
             el[i].style.color = "black";
         }
