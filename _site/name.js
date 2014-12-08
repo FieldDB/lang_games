@@ -36,14 +36,7 @@ function changeText(newText) {
 function changeColor(item, color) {
     var tag = item.className;
     var el = document.getElementsByClassName(tag);
-    console.log(el);
-    /*for (var i = 0; i < el.length; i++){
-        console.log(el[i]);
-        if (el[i].style.color === color){
-            el[i].style.color = "black";
-        }
-    }*/
-    if (!(item.id in matched)) {
+    if (matched.indexOf(item.id) === -1) {
         if (tag === "name") {
             if (item === chosenName) {
                 chosenName = null;
