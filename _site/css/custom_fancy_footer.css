@@ -208,6 +208,10 @@ background-color: #B22400;
     display:inline;
 }
 
+.buttons {
+    padding-top: 1%;
+}
+
 .btn {
     border-radius: 25px;
     padding: 4px 6px;
@@ -217,7 +221,7 @@ background-color: #B22400;
     border: dotted;
     border-color: transparent;
     width: 20%;
-    margin: 0px;
+    margin: 5px;
 }
 
 .img_option:hover {

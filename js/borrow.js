@@ -17,7 +17,7 @@ function checkMatch() {
             }
         } else {
             chosenName.style.color = "black";
-            chosenColor.style.borderColor = "black";
+            chosenColor.style.borderColor = "transparent";
             changeText("Sorry, those don't match. Try again!");
         }
         chosenName = null;
@@ -58,7 +58,7 @@ function changeBorder(item, color) {
             chosenColor = null;
         } else {
             if (chosenColor !== null) {
-                chosenColor.style.borderColor = "black";
+                chosenColor.style.borderColor = "transparent";
             }
             item.style.borderColor = color;
             chosenColor = item;
