@@ -212,3 +212,15 @@ background-color: #B22400;
     border-radius: 25px;
     padding: 4px 6px;
 }
+
+.img_option {
+    border: dotted;
+    border-color: transparent;
+    width: 20%;
+    margin: 0px;
+}
+
+.img_option:hover {
+    border: dotted;
+    border-color: orange;
+}
