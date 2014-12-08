@@ -203,3 +203,12 @@ background-color: #FFAD33;
 .navbar-inverse .dropdown-menu > .active > a:hover {
 background-color: #B22400;
 }
+
+.buttons h4 { 
+    display:inline;
+}
+
+.btn {
+    border-radius: 25px;
+    padding: 4px 6px;
+}
