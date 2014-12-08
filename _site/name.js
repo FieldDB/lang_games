@@ -4,9 +4,16 @@ addColorChange("name", "red");
 addColorChange("color", "blue");
 
 function checkMatch() {
-    if ((chosenName !== null) && (chosenColor !== null) && (chosenName.id === chosenColor.id)) {
-    chosenName.style.color = "green";
-    chosenColor.style.color = "green";
+    if ((chosenName !== null) && (chosenColor !== null)) {
+        if (chosenName.id === chosenColor.id) {
+            chosenName.style.color = "green";
+            chosenColor.style.color = "green";
+        } else {
+            chosenName.style.color = "black";
+            chosenColor.style.color = "black"; 
+        }
+            chosenName = null;
+            chosenColor = null;
     }
 }
 
