@@ -1,19 +1,35 @@
 var chosenName = null;
 var chosenColor = null;
-addColorChange("name", "red");
-addColorChange("color", "blue");
+var displayText = document.getElementById("intro_text");
+var matched = [];
+var numItems = addColorChange("name", "red");
+numItems = numItems + addColorChange("color", "blue");
 
 function checkMatch() {
     if ((chosenName !== null) && (chosenColor !== null)) {
         if (chosenName.id === chosenColor.id) {
             chosenName.style.color = "green";
             chosenColor.style.color = "green";
+            changeText("You found a matching pair!");
+            matched.push(chosenName.id);
+            if (matched.push(chosenColor.id) === numItems) {
+                changeText("You've matched all the items! Good job!");
+            }
         } else {
             chosenName.style.color = "black";
-            chosenColor.style.color = "black"; 
+            chosenColor.style.color = "black";
+            changeText("Sorry, those don't match. Try again!");
         }
-            chosenName = null;
-            chosenColor = null;
+        chosenName = null;
+        chosenColor = null;
+    } else {
+        changeText(" ");
+    }
+}
+
+function changeText(newText) {
+    if (displayText.firstChild) {
+        displayText.firstChild.nodeValue = newText;
     }
 }
 
@@ -21,28 +37,36 @@ function changeColor(item, color) {
     var tag = item.className;
     var el = document.getElementsByClassName(tag);
     console.log(el);
-    for (var i = 0; i < el.length; i++){
+    /*for (var i = 0; i < el.length; i++){
         console.log(el[i]);
         if (el[i].style.color === color){
             el[i].style.color = "black";
         }
-    }
-    if (tag === "name") {
-        if (item === chosenName) {
-            chosenName = null;
+    }*/
+    if (!(item.id in matched)) {
+        if (tag === "name") {
+            if (item === chosenName) {
+                chosenName = null;
+            } else {
+                if (chosenName !== null) {
+                    chosenName.style.color = "black";
+                }
+                item.style.color = color;
+                chosenName = item;
+            }
         } else {
-            item.style.color = color;
-            chosenName = item;
+            if (item === chosenColor) {
+                chosenColor = null;
+            } else {
+                if (chosenColor !== null) {
+                    chosenColor.style.color = "black";
+                }
+                item.style.color = color;
+                chosenColor = item;
+            }
         }
-    } else {
-        if (item === chosenColor) {
-            chosenColor = null;
-        } else {
-            item.style.color = color;
-            chosenColor = item;
-        }
+        checkMatch();
     }
-    checkMatch();
 }
 
 function addColorChange(tag, color) {
@@ -50,4 +74,5 @@ function addColorChange(tag, color) {
     for (var i = 0; i < el.length; i++){
          el[i].addEventListener("click", function(event) {changeColor(event.currentTarget, color); }, false);
      }
+    return el.length;
  }
