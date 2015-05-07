@@ -17,7 +17,6 @@ function checkMatch() {
             }
         } else {
             neutralEffectLeft(chosenLeft);
-            } 
             neutralEffectRight(chosenRight);
             changeText("Sorry, those don't match. Try again!");
         }
