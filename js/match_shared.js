@@ -8,31 +8,17 @@ function checkMatch() {
         console.log("Things aren't null");
         if (chosenLeft.id === chosenRight.id) {
             console.log("IDs match");
-            if (typeL === "border") {
-                chosenLeft.firstChild.style.borderColor = "green";
-            } else {
-                chosenLeft.style.color = "green";
-            } if (typeR === "border") {
-                chosenRight.firstChild.style.borderColor = "green";
-            } else {
-                chosenRight.style.color = "green";
-            }
+            rightEffectRight(chosenRight); 
+            rightEffectLeft(chosenLeft);
             changeText("You found a matching pair!");
             matched.push(chosenLeft.id);
             if (matched.push(chosenRight.id) === numItems) {
                 changeText("You've matched all the items! Good job!");
             }
         } else {
-            
-            if (typeL === "border") {
-                chosenLeft.firstChild.style.borderColor = "transparent";
-            } else {
-                chosenLeft.style.color = "black";
-            } if (typeR === "border") {
-                chosenRight.firstChild.style.borderColor = "transparent";
-            } else {
-                chosenRight.style.color = "black";
-            }
+            neutralEffectLeft(chosenLeft);
+            } 
+            neutralEffectRight(chosenRight);
             changeText("Sorry, those don't match. Try again!");
         }
         chosenRight = null;
@@ -58,6 +44,55 @@ function colorItem(item, color, tag) {
     }
 }
 
+function rightEffectLeft(item) {
+    if (typeL === "border") {
+        item.firstChild.style.borderColor = "green";
+    } else {
+        item.style.color = "green";
+    }
+}
+
+function rightEffectRight(item) {
+    if (typeR === "border") {
+        item.firstChild.style.borderColor = "green";
+    } else {
+        item.style.color = "green";
+    }
+}
+
+function selectEffectLeft(item) {
+    if(typeL === "border") {
+        item.firstChild.style.borderColor = "blue";
+    } else {
+        item.style.color = "blue";
+    }
+}
+
+function selectEffectRight(item) {
+    if(typeR === "border") {
+        item.firstChild.style.borderColor = "red";
+    } else {
+        item.style.color = "red";
+    }
+}
+
+function neutralEffectLeft(item) {
+    if (typeL === "border") {
+        item.firstChild.style.borderColor = "transparent";
+    } else {
+        item.style.color = "black";
+}
+
+function neutralEffectRight(item) {
+    if(typeR === "border") {
+        item.firstChild.style.borderColor = "transparent";
+    } else {
+        item.style.color = "black";
+    }
+}
+
+
+
 function changeRight(item, color) {
     var type = typeR;
     if (matched.indexOf(item.id) === -1) {
@@ -66,18 +101,10 @@ function changeRight(item, color) {
         } else {                    //item is not current selection
             if (chosenRight !== null) { //reset the previously chosen node
                 console.log(type);
-                if(typeR === "border") { //change border
-                    chosenRight.firstChild.style.borderColor = "transparent";
-                } else {
-                    chosenRight.style.color = "black";
-                }
+                neutralEffectRight(chosenRight);
             } 
             chosenRight = item;
-            if(typeR === "border") {
-                    chosenRight.firstChild.style.borderColor = "red";
-                } else {
-                    chosenRight.style.color = "red";
-                }
+            selectEffectRight(chosenRight);
             console.log("Checking match");
             console.log(chosenRight);
             console.log(chosenLeft);
@@ -93,18 +120,10 @@ function changeLeft(item, color) {
             chosenLeft = null;
         } else {                    //item is not current selection
             if (chosenLeft !== null) { //reset the previously chosen node
-                if(typeL === "border") { //change border
-                    chosenLeft.firstChild.style.borderColor = "transparent";
-                } else {
-                    chosenLeft.style.color = "black";
-                }
+                neutralEffectLeft(chosenLeft);
             }
             chosenLeft = item;
-            if(typeL === "border") {
-                    chosenLeft.firstChild.style.borderColor = "blue";
-                } else {
-                    chosenLeft.style.color = "blue";
-                }
+            selectEffectLeft(chosenLeft);
             console.log("Checking match");
             console.log(chosenRight);
             console.log(chosenLeft);
